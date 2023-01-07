@@ -14,8 +14,30 @@ VuePress es un generador de sitios estáticos alimentado por Vue que genera pág
 ## Instalación
 - Preparación de la plataforma
   - Vuepress
+
+  La forma más rápida de configurar el proyecto VuePress es usar el generador **`create-vuepress-site`**, que montará la estructura básica del sitio de VuePress.
+
+  Para usarlo, abra la terminal en el directorio deseado y ejecute el siguiente comando:
+
+  ~~~sh
+  npx create-vuepress-site [optionalDirectoryName]
+  ~~~
+
   - Github
-- Estructura de archivos
+  ~~~sh
+  git init
+  ~~~
+
+  [12 Comandos de Git que debes de saber](https://youtu.be/iT4UOkyI09k)
+
+- Estructura de directorios
+
+![estructura](/img/estructura.png)
+<img :src="$withBase('/img/estructura.png')">
+
+:::warning Nota
+Hay que tener en cuenta las mayúsculas, minúsculas y capitalización de los archivos.
+:::
 
 ## Configuración
 - Estructura de los contenidos
