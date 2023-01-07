@@ -5,14 +5,17 @@ module.exports = {
   title: 'Curso de Vuepress',
   description: 'Curso intersemestral de Vuepress. ITCampeche',
   themeConfig: {
-    repo: '',
     editLinks: false,
     lastUpdated: false,
     nav: [
       {
         text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+        link: 'https://v1.vuepress.vuejs.org/guide'
+      },
+      {
+        text: 'Markdown',
+        link: 'https://programminghistorian.org/es/lecciones/introduccion-a-markdown'
+      },
     ],
     sidebar: [
       '/',
