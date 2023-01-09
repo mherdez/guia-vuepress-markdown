@@ -138,10 +138,12 @@ module.exports = {
   ~~~
 
 
-## Práctica #1. Primeros pasos
+## Práctica #1 Vuepress. Primeros pasos
 - Instalación
 - Configuración
-- Personalización
+- Creación de menús y rutas
+- Desarrollo de contenidos
+- Optimización del código
 
 ## Markdown
 
@@ -393,7 +395,7 @@ Se convierte en
 Esto es una línea de código
 ~~~
 
-:::tip NOTA
+:::warning NOTA
 ¡estos espacios se debe incluir en cada línea que se escriba! Para añadir código en bloque es mejor utilizar la sintaxis anterior: `códigos de bloque`.
 :::
 
@@ -460,12 +462,6 @@ _  guión bajo
 ### Multimarkdown
 
 Depende del nivel al que se necesite llegar para escribir documentación u otro tipo de contenido, se puede observar que al Markdown original quizá le faltan ciertas características para poder realizar todo aquello que se necesita (tablas, notas de pie de página, etc.), se puede consultar [Multimarkdown](https://markdown.es/multimarkdown/) para ampliar el conocimiento.
-
-
-## Vuepress
-- Desarrollo de contenidos
-- Creación de menús y rutas
-- Optimización del código
 
 ## Desarrollo y despliegue
 - Comprobación
