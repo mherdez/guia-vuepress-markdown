@@ -1,7 +1,7 @@
 module.exports = {
   dest: 'docs',
   base: '/guia-vuepress-markdown/',
-  lang: 'es-MX',
+  lang: 'es-ES',
   title: 'Curso de Vuepress',
   description: 'Curso intersemestral de Vuepress. ITCampeche',
   themeConfig: {
@@ -22,14 +22,14 @@ module.exports = {
       },
     ],
     sidebar: [
-    {
-      collapsable: false,
-      sidebarDepth: 2,
-    children: [
       '/',
-
-    ]
-    },
+      '/pages/01-practica-1',
+      '/pages/02-markdown',
+      '/pages/03-desarrollo',
+      '/pages/04-practica-2',
+      '/pages/05-deploy',
+      '/pages/06-practica-3',
+      '/pages/07-avanzado',
     ]
   },
   plugins: [

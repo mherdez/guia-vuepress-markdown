@@ -1,9 +1,12 @@
 <template>
+  <div>
+    <h4>Este listado de referencias se desarrollo con un componente de Vue</h4>
   <ul>
     <li v-for='(item, index) in recursos' key='index'>
       <a :href=item.link> {{ item.name }} </a>
     </li>
   </ul>
+  </div>
 </template>
 
 <script>
