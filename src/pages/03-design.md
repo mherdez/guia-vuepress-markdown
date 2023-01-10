@@ -1,6 +1,6 @@
-# Desarrollo del sitio
+# Diseño del sitio
 
-- Diseño del sitio
+- Planeación del sitio
 - Estructura básica
 - Barra de navegación
 - Barra lateral

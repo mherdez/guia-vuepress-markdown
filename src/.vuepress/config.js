@@ -25,7 +25,7 @@ module.exports = {
       '/',
       '/pages/01-practica-1',
       '/pages/02-markdown',
-      '/pages/03-desarrollo',
+      '/pages/03-design',
       '/pages/04-practica-2',
       '/pages/05-deploy',
       '/pages/06-practica-3',
