@@ -22,7 +22,14 @@ module.exports = {
       },
     ],
     sidebar: [
+    {
+      collapsable: false,
+      sidebarDepth: 2,
+    children: [
       '/',
+
+    ]
+    },
     ]
   },
   plugins: [

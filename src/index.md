@@ -147,17 +147,17 @@ module.exports = {
 
 ## Markdown
 
+Fuente: <https://markdown.es/>
+
 ### Conocimiento del lenguaje
 
 Markdown nació como herramienta de conversión de texto plano a HTML.
 
 Aunque en realidad **Markdown** también se considera un **lenguaje** que tiene la finalidad de permitir crear contenido de una manera **sencilla de escribir, y que en todo momento mantenga un diseño legible**, así que para simplificar **se puede considerar Markdown como un método de escritura**.
 
-### Sintaxis
+### Elementos de bloque
 
-#### Elementos de bloque
-
-#### - Párrafos y saltos de línea
+### - Párrafos y saltos de línea
 
 Para generar un nuevo párrafo en Markdown simplemente separa el texto mediante una línea en blanco (pulsando dos veces intro)
 
@@ -165,7 +165,7 @@ Al igual que sucede con HTML, Markdown no soporta dobles líneas en blanco, así
 
 Para realizar un salto de línea y empezar una frase en una línea siguiente dentro del mismo párrafo, tendrás que pulsar dos veces la barra espaciadora antes de pulsar una vez intro.
 
-#### - Encabezados
+### - Encabezados
 
 Las `#` almohadillas son uno de los métodos utilizados en Markdown para crear encabezados. Debes usarlos añadiendo uno por cada nivel.
 
@@ -178,7 +178,7 @@ Las `#` almohadillas son uno de los métodos utilizados en Markdown para crear e
 ###### Encabezado 6
 ~~~
 
-#### - Citas
+### - Citas
 
 Las citas se generar utilizando el carácter mayor que > al comienzo del bloque de texto.
 
@@ -215,7 +215,7 @@ Incluso puedes concatenar varios `>>` para crear citas anidadas.
 >
 > La cita principal llegaría hasta aquí.
 
-#### - Listas
+### - Listas
 
 Para crear **listas desordenadas** utiliza `*` **asteriscos**, `-` **guiones**, o `+` **símbolo de suma**.
 
@@ -273,7 +273,7 @@ Para crear **listas ordenadas** debes utilizar la sintaxis de tipo: *«número.�
         1. Elemento de lista 5
         2. Elemento de lista 6
 
-#### - Códigos de bloque
+### - Códigos de bloque
 
 Si quieres crear un bloque entero que contenga código. Lo único que tienes que hacer es encerrar dicho párrafo entre dos líneas formadas por tres ~ virgulillas.
 
@@ -291,7 +291,7 @@ Creando códigos de bloque.
 Puedes añadir tantas líneas y párrafos como quieras.
 ~~~
 
-#### - Reglas horizontales
+### - Reglas horizontales
 
 Las reglas horizontales se utilizan para separar secciones de una manera visual.
 
@@ -304,9 +304,9 @@ ___
 ~~~
 ___
 
-#### Elementos de línea
+### Elementos de línea
 
-#### - Énfasis (negritas y cursivas)
+### - Énfasis (negritas y cursivas)
 
 Markdown utiliza **asteriscos** o **guiones bajos** para enfatizar.
 
@@ -327,7 +327,7 @@ Por supuesto si quieres utilizar los dos tipos de énfasis no tienes más que **
 | \___cursiva y negrita___	| ___cursiva y negrita___	|
 
 
-#### - Links o enlaces
+### - Links o enlaces
 
 Añadir enlaces a una publicación, más que común, hoy en día es algo casi obligatorio. Con Markdown tendrás varias formas de hacerlo.
 
@@ -369,7 +369,7 @@ Me llamo Javier Cristóbal y tengo un blog sobre [productividad mac][blog].
 En dicha [web][blog] recopilo artículos sobre todo lo relacionado con automatización, gestión y eficiencia.
 :::
 
-#### - Código
+### - Código <code>\<code></code>
 
 La forma más sencilla de escribir código en Markdown es envolver el texto entre dos comillas sencillas <code>`</code>. Esto se corresponde con la etiqueta HTML <code>\<code></code>
 
@@ -381,13 +381,25 @@ Se verá como `Esto es una línea de código`.
 
 Como ves, es muy útil para introducir código dentro de la misma línea o párrafo, algo que no permite el método siguiente.
 
-- Texto preformateado <code>\<pre></code>
+### - Texto preformateado <code>\<pre></code>
 
-La otra manera de añadir código en Markdown es comenzar el párrafo con cuatro espacios en blanco. Esto se corresponde con la etiqueta HTML \<pre>
+~~~md
+<pre>
+Esto es una línea de código
+</pre>
+~~~
+
+Se observa que hay una dificultad para visualizar el resultado.
+
+<pre>
+Esto es una línea de código
+</pre>
+
+La otra manera de añadir código en Markdown es comenzar el párrafo con **cuatro espacios en blanco**. Esto se corresponde con la etiqueta HTML \<pre>
 
 ~~~
   Esto es una línea de código
-~~~
+~~~~
 
 Se convierte en
 
@@ -399,23 +411,31 @@ Esto es una línea de código
 ¡estos espacios se debe incluir en cada línea que se escriba! Para añadir código en bloque es mejor utilizar la sintaxis anterior: `códigos de bloque`.
 :::
 
-#### - Imágenes
+### - Imágenes
 
 Insertar una imagen con Markdown se realiza de una manera prácticamente idéntica a insertar **links**.
 
-Solo que en este caso, deberás añadir un símbolo de `!` **exclamación** al principio y el enlace no será otro que la ubicación de la imagen.
+Solo que en este caso, se deberá añadir un símbolo de `!` **exclamación** al principio y el enlace no será otro que la ubicación de la imagen.
 
 ~~~md
 ![Texto alternativo](/ruta/a/la/imagen.jpg)
 ~~~
 
-También podrás añadir un título alternativo entrecomillándolo al final de la ruta. Esto sería el título mostrado al dejar el cursor del ratón sobre la imagen.
+También se podrá añadir un título alternativo entrecomillándolo al final de la ruta. Esto sería el título mostrado al dejar el cursor del ratón sobre la imagen.
 
 ~~~md
 ![Texto alternativo](/ruta/a/la/imagen.jpg "Título alternativo")
 ~~~
 
-Ya que al añadir imágenes también estás tratando con URLs, puedes utilizar el método que viste anteriormente para incluir links mediante referencias, solo que en este caso los enlaces de referencia serán aquellos donde se encuentre tu imagen.
+Ejemplo
+
+~~~md
+![Picsum Photos](https://picsum.photos/300/200 "Imágen aleatoria de Picsum Photos")
+~~~
+
+![Picsum Photos](https://picsum.photos/id/24/300/200 "Imágen aleatoria de Picsum Photos")
+
+Ya que al añadir imágenes también se está tratando con URLs, se puede utilizar el método que se vió anteriormente para incluir links mediante referencias, solo que en este caso los enlaces de referencia serán aquellos donde se encuentre la imagen.
 
 ~~~md
 De esta forma podrías insertar una imagen
@@ -424,11 +444,22 @@ De esta forma podrías insertar una imagen
 O dos, sin ensuciar tu espacio de escritura.
 ![nombre de la imagen2][img2]
 
-[img1]: /ruta/a/la/imagen2.jpg "Título alternativo uno"
-[img2]: /ruta/a/la/imagen2.jpg "Título alternativo"
+[img1]: https://picsum.photos/id/66/300/200 "Título alternativo uno"
+[img2]: https://picsum.photos/id/84/300/200 "Título alternativo"
 ~~~
 
-#### - Links automáticos
+De esta forma podrías insertar una imagen
+
+![nombre de la imagen][img1]
+
+O dos, sin ensuciar tu espacio de escritura.
+
+![nombre de la imagen2][img2]
+
+[img1]: https://picsum.photos/id/66/300/200 "Título alternativo uno"
+[img2]: https://picsum.photos/id/84/300/200 "Título alternativo"
+
+### - Links automáticos
 Estos tipo de links son necesarios cuando se quiere mostrar una URL completa, y no un enlace enmascarado bajo una palabra o frase como ocurre con los links en línea.
 
 Para generar links automáticos tan solo tendrás que rodearlos con los símbolos ` < > `
@@ -440,7 +471,7 @@ Para generar links automáticos tan solo tendrás que rodearlos con los símbolo
 <https:www.google.com/>
 
 
-#### - Omitir Markdown
+### - Omitir Markdown
 
 Para escribir ciertos símbolos como **\* asteriscos o _ guiones bajos**, sin que Markdown los interprete para convertirlos en negritas, cursivas... se antepone la barra invertida `\` delante de cualquiera de los elementos que se enlista a continuación, mismos que no tendrán efecto a la hora de convertirse en negritas, cursivas, links…
 
