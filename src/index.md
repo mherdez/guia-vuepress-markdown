@@ -22,6 +22,8 @@ VuePress es un generador de sitios estáticos alimentado por Vue que genera pág
   npx create-vuepress-site [optionalDirectoryName]
   ~~~
 
+  #### Instalando las dependencias del proyecto
+
   ~~~sh
   cd [carpeta-proyecto]
   cd [docs]
