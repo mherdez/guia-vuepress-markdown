@@ -22,6 +22,12 @@ VuePress es un generador de sitios estáticos alimentado por Vue que genera pág
   npx create-vuepress-site [optionalDirectoryName]
   ~~~
 
+  ~~~sh
+  cd [carpeta-proyecto]
+  cd [docs]
+  npm install
+  ~~~
+
  ### Github
 
  Git es un sistema maduro de control de revisiones de código abierto que se mantiene activo y lo utilizan miles de desarrolladores en todo el mundo.
@@ -33,6 +39,13 @@ VuePress es un generador de sitios estáticos alimentado por Vue que genera pág
   :::tip
   Para saber más acerca de Git puede consultar: [12 Comandos de Git que debes de saber](https://youtu.be/iT4UOkyI09k)
   :::
+
+ ### Visual Studio Code
+
+  ~~~sh
+  code .
+  ~~~
+
 
 ## Estructura de directorios
 
