@@ -6,6 +6,7 @@ VuePress es un generador de sitios estáticos alimentado por Vue que genera pág
 
 ## Recursos
 - [Node.js / npm](https://nodejs.org/es/)
+- [Git](https://git-scm.com/)
 - [Vuepress](https://vuepress.vuejs.org/)
 - [Markdown](https://www.markdownguide.org/)
 - [Github](https://github.com/)
