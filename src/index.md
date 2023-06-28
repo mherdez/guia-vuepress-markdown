@@ -31,9 +31,25 @@ VuePress es un generador de sitios estáticos alimentado por Vue que genera pág
   npm install
   ~~~
 
- ### Github
+ ### Git
 
  Git es un sistema maduro de control de revisiones de código abierto que se mantiene activo y lo utilizan miles de desarrolladores en todo el mundo.
+
+  #### Configuración del user y email
+
+  ~~~~sh
+  git config --global user.name "nombre de usuario"
+  git config --global user.email "usuario@dominio.ext"
+  ~~~~
+
+  #### Verificación del user y email
+
+  ~~~sh
+  git config user.name
+  git config user.email
+  ~~~
+
+  #### Inicializar el repositorio local
 
   ~~~sh
   git init
@@ -48,7 +64,6 @@ VuePress es un generador de sitios estáticos alimentado por Vue que genera pág
   ~~~sh
   code .
   ~~~
-
 
 ## Estructura de directorios
 
